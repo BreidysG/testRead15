@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 15</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                Agujas
+                <br><br>
+                Mamá siempre repetía que ella con una aguja tenía lo que quería. No sólo obtenía un vestido, una camisa, una bata desde un trozo de tela. Mi madre podía conseguir objetos maravillosos que no salen de una aguja común y corriente.
+                <br><br>
+                Una vez cosió un billete de cien pesos y tuvimos una época extendida en dinero. Otra vez cosió granos y tuvimos la despensa llena. Cosía pelos de parejas descarriladas y les volvía el amor como en racimos. Cosía ropitas de niños pálidos y les volvía el color y la fuerza. Cosía pelos de animalitos enfermos y los sanaba. Mi padre estaba sujeto a ella por un amor de mil hilos.
+                <br><br>
+                Mi casa estaba sujeta a aquella vida por millones de agujas de tamaños inverosímiles. Desde pequeñitas para los llantos de bebé hasta las gigantes que ataban desde un amor o un sueño imposible hasta un hogar, como el nuestro.
+                <br><br>
+                Mi madre cosía todo el tiempo y contaba cada puntada. Lo más increíble era que recordaba cuántas daba para cada cosa. A veces cobraba dinero, pero otras, comida o ropas, cosas necesarias pero no imprescindibles, decía al pasar los costos. Cuando su fama de costurera universal de todo lo aferrable se extendió por varias zonas, le exigimos con papá que subiera los costos. Y ella cosió para nosotros un billete grande y nuevo.
+                <br><br>
+                Y comenzaron a llegar a sus manos laboriosas, la gente que tiene dinero y aun así, necesita más cosas. Y le pagaban aunque mamá siempre se reía de sus pretensiones. Pero nunca les aferró a sus hilos ambiciones desmedidas o propósitos desopilantes. Mi madre cosía con éxito sólo las posibles necesidades dignas y humanas. Ganó prestigio, todos la necesitaban. Sus manos mágicas cosían un mundo de deseos buenos.
+                <br><br>
+                Su vida no fue la misma. Dejó de dormir para poder cumplir y luego de comer. Las agujas y los hilos la fueron atrapando de tal manera que ella misma quedó cosida. Un día dejamos de verla y llorando a gritos la buscamos. Mi padre la encontró cosida a su cama y me dijo que mañana o pasado volvería.
+                <br><br>
+                Y volvió. Y fue mi mamá y por suerte nunca más recordó su afán por coser los deseos de otros.
+                <br><br>
+                <a href="https://www.encuentos.com/cuentos-de-madres/agujas/" target="_blank">Escritora María Luisa De Francesco 371 palabras</a>
+            </p>
+                         
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
